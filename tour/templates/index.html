@@ -1,0 +1,177 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Discovery</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/modern-business.css' %}" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">INSIDE GH</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>        
+      
+  <header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <!-- Slide One - Set the background image for this slide in the line below -->
+        <div class="carousel-item active" style="background-image:url('static/pool.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Golden Tulip</h3>
+            <p>This is an understated accomodation,plus stylish restaurant &spades; lounge with live music</p>
+          </div>
+        </div>
+        <!-- Slide Two - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image:url('static/max.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            <h3 style ="color:#0B5345">Marine Drive Way-Accra</h3>
+            <p style ="color:grey">A modern arts and crafts center.</p>
+          </div>
+        </div>
+        <!-- Slide Three - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('static/zen.jpg')">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Zen Gardens</h3>
+            <p>A lovely restaurant which sits quietly tucked away in a garden.</p>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <h1 class="my-4"><i>Welcome to INSIDE GH</i></h1>
+
+    <!-- Portfolio Section -->
+    <div class="row">
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="static/piano.jpg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">Piano Bar</a>
+            </h4>
+            <p class="card-text">Piano Bar is an indoor musical venue which offers customers 
+            an opportunity to enjoy good and live musical performances which includes open mic
+            sessions.<h3>LOCATION :Teshie GREDA Estates<h3></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="static/moven.jpg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">Movenpick Ambassador Hotel</a>
+            </h4>
+            <p class="card-text">Sophisticated accomodation in an upscale garden setting plus
+              terrace dinning ,pool and gym.<h3>LOCATION :Independence Avenue</h3></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="static/kakum.jpg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">Kakum National Park</a>
+            </h4>
+            <p class="card-text">A protected rain forest, home to endangered mammals,and rich in butterlies and birds.Most famous for its canopy walk way.<h3>LOCATION:Twifo Praso(Cape-Coast)</h3></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="static/palmbeach.jpg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">La Palm Royal Beach Hotel</a>
+            </h4>
+            <p class="card-text">Modern rooms & suites  with iPod docks,along with 3 restaurants,an ice cream parlour & a pool<h3> LOCATION: Labadi, Accra </h3></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="static/home.jpg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">Rufus Green-Parks</a>
+            </h4>
+            <p class="card-text">A great place to get out of the city  & enjoy fresh air without going too far out of Accra.<h3>LOCATION:Off the Dodowa Road near Adenta.</h3></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="static/atlantic.jpg" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">Best Western Plus Atlantic Hotel</a>
+            </h4>
+            <p class="card-text">Relaxed property with free wifi & breakfast plus an outdoor pool, A restaurant and a nightclub. <h3>LOCATION: Harbour Road, Takoradi</h3></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+    <hr>
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; INSIDEGH 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+</body>
+
+</html>
