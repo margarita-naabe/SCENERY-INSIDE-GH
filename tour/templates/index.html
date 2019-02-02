@@ -1,43 +1,8 @@
-{% load staticfiles %}
-<!DOCTYPE html>
-<html lang="en">
+{% extends "layout/master.html" %}
 
-<head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <title>Discovery</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="{% static 'css/modern-business.css' %}" rel="stylesheet">
-</head>
-
-<body>
-
-  <!-- Navigation -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">INSIDE GH</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>        
-      
-  <header>
+{% block content %}
+<header>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -78,7 +43,7 @@
     </div>
   </header>
 
-  <!-- Page Content -->
+ <!-- Page Content -->
   <div class="container">
 
     <h1 class="my-4"><i>Welcome to INSIDE GH</i></h1>
@@ -94,7 +59,7 @@
             </h4>
             <p class="card-text">Piano Bar is an indoor musical venue which offers customers 
             an opportunity to enjoy good and live musical performances which includes open mic
-            sessions.<h3>LOCATION :Teshie GREDA Estates<h3></p>
+            sessions.<span class="bold">LOCATION :Teshie GREDA Estates<h3></p>
           </div>
         </div>
       </div>
@@ -160,18 +125,4 @@
   </div>
   <!-- /.container -->
 
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; INSIDEGH 2019</p>
-    </div>
-    <!-- /.container -->
-  </footer>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
-  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-
-</body>
-
-</html>
+{% endblock %}
