@@ -1,5 +1,7 @@
-{% load staticfiles %}
+<!-- This html file is the base layout file all the other pages will inherit from it
+        ie: all the other pages will use it **explanation not good enough re-explain later* -->
 <!DOCTYPE html>
+{% load staticfiles %}
 <html lang="en">
 
 <head>
@@ -11,11 +13,17 @@
 
     <title>Discovery</title>
 
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,700i,800&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+          rel="stylesheet">
+
     <!-- Bootstrap core CSS -->
     <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="{% static 'css/modern-business.css' %}" rel="stylesheet">
+
 </head>
 
 <body>
@@ -25,7 +33,6 @@
 {% block content %}
 {% endblock %}
 
-<!-- /.container -->
 
 <!-- Footer -->
 {% include "layout/footer.html" %}
